@@ -347,13 +347,13 @@ body {
 @media (max-width:640px){
   .grid-4{ grid-template-columns:1fr; }
 }
-/* Ambient site background */
+/* Ambient site background (dark feel) */
 body::before{
   content:"";
   position: fixed;
   inset: 0;
   background: url("../img/bg-forest.jpg") center/cover no-repeat fixed;
-  opacity: .18;          /* tweak 0.10–0.30 to taste */
+  opacity: .18;                    /* increase to .22–.28 if you want it stronger */
   filter: saturate(1.05);
   pointer-events: none;
   z-index: -1;
