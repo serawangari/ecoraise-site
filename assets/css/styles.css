@@ -435,4 +435,67 @@ h1,h2,h3,h4,.brand,.big-stat .num{
 }
 .exp-fallback a{ font-weight:600; text-decoration:none; color:#a7f3d0; }
 .exp-fallback a:hover{ text-decoration:underline; }
+/* ===== Dark-green glass theme (overrides) ===== */
+:root{
+  --glass-green: rgba(8, 38, 22, .68);     /* header strength */
+  --glass-green-soft: rgba(8, 38, 22, .55);/* panels */
+  --glass-green-border: rgba(64, 160, 110, .25);
+  --glass-text: #e8f5ee;                   /* light jade text */
+}
+
+/* Site-wide ambient background with green hue */
+body::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(rgba(8,38,22,.35), rgba(8,38,22,.35)), /* green tint */
+    url("../img/bg-forest.jpg") center/cover no-repeat fixed;
+  opacity: .22;               /* 0.18–0.30 = weaker/stronger */
+  filter: saturate(1.05);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Header: dark-green glass */
+.site-header{
+  backdrop-filter: saturate(140%) blur(10px);
+  background: var(--glass-green);
+  border-bottom: 1px solid var(--glass-green-border);
+}
+.brand{ color: var(--glass-text); }
+.nav-links a{ color: var(--glass-text); }
+.nav-links a:hover{ color:#ffffff; }
+
+/* Ghost button on dark-green */
+.btn-ghost{
+  border:1px solid rgba(167, 243, 208, .55);
+  color:#eafff4;
+  background: transparent;
+}
+.btn-ghost:hover{ border-color:#ffffff; color:#ffffff; }
+
+/* ArcGIS embed panel: dark-green glass */
+.exp-embed{
+  margin-top:22px;
+  background: var(--glass-green-soft);
+  border:1px solid var(--glass-green-border);
+  border-radius:12px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(6px);
+  overflow:hidden;
+}
+.exp-fallback{
+  margin:0; padding:10px 12px;
+  background:transparent;
+  border-top:1px solid rgba(255,255,255,.12);
+  text-align:right; color: var(--glass-text);
+}
+.exp-fallback a{ font-weight:600; text-decoration:none; color:#a7f3d0; }
+.exp-fallback a:hover{ text-decoration:underline; }
+
+/* Optional: give the hero overlay a subtle green bias too */
+.hero-overlay{
+  background: linear-gradient(180deg, rgba(8,38,22,.40), rgba(8,38,22,.55));
+}
 
