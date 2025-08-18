@@ -1,76 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leafscapes</title>
-    <!-- Fixed CSS path -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leafscapes</title>
+  <!-- correct CSS path -->
+  <link rel="stylesheet" href="./assets/css/styles.css?v=3"/>
 </head>
 <body>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <!-- Fixed image path + filename -->
-        <img src="assets/img/casey-horner-4rDCa5hBlCs-unsplash.jpg" alt="Leafscapes Hero Image" class="hero-img">
-        <div class="hero-overlay">
-            <h1 class="hero-title">Leafscapes</h1>
-            <p class="hero-subtitle">
-                A transformative greening initiative that bridges the gap between corporate responsibility and community empowerment.
-            </p>
-            <form class="hero-form">
-                <h2>Join Leafscapes</h2>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <button type="submit">Sign Up</button>
-            </form>
-        </div>
-    </section>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <!-- point to an image that exists in assets/img (rename one to hero.jpg if needed) -->
+    <img src="./assets/img/hero.jpg" alt="Leafscapes Hero Image" class="hero-img"/>
+    <div class="hero-overlay">
+      <h1 class="hero-title">Leafscapes</h1>
+      <p class="hero-subtitle">
+        A transformative greening initiative that bridges the gap between corporate responsibility and community empowerment.
+      </p>
+      <form class="hero-form">
+        <h2>Join Leafscapes</h2>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </section>
 
-    <!-- ABOUT SECTION -->
-    <section class="about">
-        <div class="container">
-            <h2>About Leafscapes</h2>
-            <p>
-                Through our program, companies channel their Corporate Social Responsibility (CSR) commitments into tangible environmental action by sponsoring tree planting projects.
-            </p>
-            <p>
-                The heart of Leafscapes lies in schools and their nurseries — vibrant hubs where young minds grow alongside the seedlings they nurture. Corporates partner with these schools to source healthy, locally adapted tree seedlings, directly supporting education, environmental stewardship, and local livelihoods.
-            </p>
-            <p>
-                From urban centers to rural landscapes, Leafscapes brings together:
-            </p>
-            <ul>
-                <li>Corporate partners seeking impactful, measurable CSR outcomes.</li>
-                <li>Schools acting as both environmental educators and seedling suppliers.</li>
-                <li>Community members and volunteers who take part in planting, care, and long-term monitoring of the trees.</li>
-            </ul>
-            <p>
-                With Leafscapes, planting a tree becomes more than just an act of conservation — it becomes a story of collaboration, knowledge-sharing, and hope for greener, healthier futures across Kenya.
-            </p>
-        </div>
-    </section>
+  <!-- ABOUT SECTION -->
+  <section class="about">
+    <div class="container">
+      <h2>About Leafscapes</h2>
+      <p>
+        Through our program, companies channel their Corporate Social Responsibility (CSR) commitments into tangible environmental action by sponsoring tree planting projects.
+      </p>
+      <p>
+        The heart of Leafscapes lies in schools and their nurseries — vibrant hubs where young minds grow alongside the seedlings they nurture. Corporates partner with these schools to source healthy, locally adapted tree seedlings, directly supporting education, environmental stewardship, and local livelihoods.
+      </p>
+      <p>From urban centers to rural landscapes, Leafscapes brings together:</p>
+      <ul>
+        <li>Corporate partners seeking impactful, measurable CSR outcomes.</li>
+        <li>Schools acting as both environmental educators and seedling suppliers.</li>
+        <li>Community members and volunteers who take part in planting, care, and long-term monitoring of the trees.</li>
+      </ul>
+      <p>
+        With Leafscapes, planting a tree becomes more than just an act of conservation — it becomes a story of collaboration, knowledge-sharing, and hope for greener, healthier futures across Kenya.
+      </p>
+    </div>
+  </section>
 
-    <!-- STATS SECTION -->
-    <section class="stats">
-        <div class="container">
-            <div class="stat">
-                <h3>10,000+</h3>
-                <p>Trees Planted</p>
-            </div>
-            <div class="stat">
-                <h3>50+</h3>
-                <p>Schools Partnered</p>
-            </div>
-            <div class="stat">
-                <h3>200+</h3>
-                <p>Corporate Volunteers</p>
-            </div>
-        </div>
-    </section>
+  <!-- STATS SECTION -->
+  <section class="stats">
+    <div class="container">
+      <div class="stat">
+        <h3 class="stat-count" data-count="10000">0</h3>
+        <p>Trees Planted</p>
+      </div>
+      <div class="stat">
+        <h3 class="stat-count" data-count="50">0</h3>
+        <p>Schools Partnered</p>
+      </div>
+      <div class="stat">
+        <h3 class="stat-count" data-count="200">0</h3>
+        <p>Corporate Volunteers</p>
+      </div>
+    </div>
+  </section>
 
+  <footer class="about">
+    <div class="container" style="text-align:center;">
+      <small>© <span id="year"></span> Leafscapes</small>
+    </div>
+  </footer>
+
+  <!-- correct JS path -->
+  <script defer src="./assets/js/app.js"></script>
 </body>
 </html>
+
 
 
 
