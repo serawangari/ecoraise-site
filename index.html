@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Leafscapes</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/styles.css?v=7"/>
+  <link rel="stylesheet" href="./assets/css/styles.css?v=8"/>
 </head>
 <body>
 
@@ -16,6 +16,7 @@
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#programs">Programs</a>
+        <a href="#segments">Segments</a>
         <a href="#impact">Impact</a>
         <a href="#gallery">Gallery</a>
         <a href="#donate" class="btn btn-primary">Donate</a>
@@ -24,7 +25,7 @@
     </div>
   </header>
 
-  <!-- HERO (full-bleed image) -->
+  <!-- HERO -->
   <section class="hero">
     <img src="./assets/img/hero.jpg" alt="Leafscapes Hero Image" class="hero-img" />
     <div class="hero-overlay">
@@ -36,8 +37,6 @@
         <a href="#donate" class="btn btn-primary">Donate Now</a>
         <a href="#programs" class="btn btn-ghost">Our Programs</a>
       </div>
-
-      <!-- Floating signup card -->
       <form class="hero-form reveal" style="--d:.35s">
         <h2>Join Leafscapes</h2>
         <input type="text" placeholder="Your Name" required />
@@ -47,7 +46,7 @@
     </div>
   </section>
 
-  <!-- ABOUT (image + text like EcoRaise) -->
+  <!-- ABOUT -->
   <section id="about" class="section reveal">
     <div class="container about__wrap">
       <div class="about__media">
@@ -67,7 +66,7 @@
     </div>
   </section>
 
-  <!-- PROGRAMS (image-backed cards like the template’s feature blocks) -->
+  <!-- PROGRAMS -->
   <section id="programs" class="section alt reveal">
     <div class="container">
       <div class="section-head">
@@ -97,50 +96,130 @@
     </div>
   </section>
 
-  <!-- IMPACT / STATS -->
-  <section id="impact" class="stats section reveal">
-    <div class="container">
-      <div class="section-head">
-        <h2>Our Impact</h2>
-        <p>What your support has grown so far.</p>
+  <!-- SEGMENTS (new) -->
+  <section id="segments" class="section segments reveal">
+    <div class="container segments__wrap">
+      <!-- Left intro -->
+      <div class="segments__intro">
+        <h2>Take Charge of your Projects</h2>
+        <p>
+          Use maps and analysis of spatial data to visualize, understand, plan, and act when coordinating forestry management programs.
+          Optimize workflows and mitigate risk while improving sustainable forestry and preserving wildlife, habitat, and ecosystems.
+        </p>
       </div>
 
-      <div class="stats-wrap">
-        <div class="stat">
-          <h3 class="stat-count" data-count="10000">0</h3>
-          <p>Trees Planted</p>
-        </div>
-        <div class="stat">
-          <h3 class="stat-count" data-count="50">0</h3>
-          <p>Schools Partnered</p>
-        </div>
-        <div class="stat">
-          <h3 class="stat-count" data-count="200">0</h3>
-          <p>Corporate Volunteers</p>
-        </div>
-      </div>
-
-      <div class="progress reveal" style="--d:.1s">
-        <div class="progress-bar" data-progress="72"><span>72%</span></div>
+      <!-- Right cards -->
+      <div class="segments__cards">
+        <article class="segments__card reveal" style="--d:.05s">
+          <h3>Visualize data</h3>
+          <p>Give data life through a series of maps, apps, and analytics that support your organization's digital transformation journey.</p>
+        </article>
+        <article class="segments__card reveal" style="--d:.1s">
+          <h3>Understand &amp; share</h3>
+          <p>Provide easy access to relevant information in appropriate apps to uncover spatial patterns and analyze options for improvement.</p>
+        </article>
+        <article class="segments__card reveal" style="--d:.15s">
+          <h3>Plan ahead</h3>
+          <p>Energize the planning process with improved operational workflows while mitigating risk for enhanced business performance.</p>
+        </article>
+        <article class="segments__card reveal" style="--d:.2s">
+          <h3>Act with confidence</h3>
+          <p>Be confident in the agile decisions that you make and thrive as an organization with location at the center of operations.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- GALLERY (simple two-up like EcoRaise samples) -->
-  <section id="gallery" class="section reveal">
+  <!-- IMPACT (large figures) -->
+  <section id="impact" class="impact section reveal">
     <div class="container">
-      <div class="section-head">
-        <h2>In the Field</h2>
-        <p>Snapshots from recent plantings and community sessions.</p>
-      </div>
-      <div class="gallery">
-        <img src="./assets/img/gallery-1.jpg" alt="Planting day" />
-        <img src="./assets/img/gallery-2.jpg" alt="Community nursery" />
+      <div class="impact-grid">
+        <div class="big-stat">
+          <div class="num stat-count-adv" data-end="256" data-prefix="$" data-suffix="M">0</div>
+          <p class="label">We’ve Helped Raise</p>
+        </div>
+        <div class="big-stat">
+          <div class="num stat-count-adv" data-end="37" data-suffix="K+">0</div>
+          <p class="label">Projects Funded</p>
+        </div>
+        <div class="big-stat">
+          <div class="num stat-count-adv" data-end="40" data-suffix="+">0</div>
+          <p class="label">Countries Worldwide</p>
+        </div>
+        <div class="big-stat">
+          <div class="num stat-count-adv" data-end="89" data-suffix="K">0</div>
+          <p class="label">Volunteers Connected</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA (image background with dark scrim like the template) -->
+  <!-- GALLERY (featured hero + tile rail) -->
+  <section id="gallery" class="gallery-section reveal">
+    <div class="gallery-hero" style="--bg:url('./assets/img/gallery-1.jpg')">
+      <div class="gallery-hero__scrim"></div>
+      <div class="container gallery-hero__content">
+        <p class="eyebrow">INDUSTRY BLOG</p>
+        <h2 class="gallery-title">People and wildlife in Africa</h2>
+        <p class="gallery-desc">
+          Community conservation planning that balances tradition and technology.
+        </p>
+        <a class="btn btn-primary gallery-btn" href="#" target="_blank" rel="noopener">Read the story</a>
+      </div>
+    </div>
+
+    <div class="gallery-panel">
+      <div class="container">
+        <div class="gallery-rail">
+          <article
+            class="gallery-item active"
+            data-bg="./assets/img/gallery-1.jpg"
+            data-title="People and wildlife in Africa"
+            data-desc="Community conservation planning that balances tradition and technology."
+            data-link="#"
+          >
+            <img class="gallery-thumb" src="./assets/img/gallery-1.jpg" alt="People and wildlife in Africa" />
+            <h4>People and wildlife in Africa</h4>
+          </article>
+
+          <article
+            class="gallery-item"
+            data-bg="./assets/img/program-3.jpg"
+            data-title="Citizen science app helps mitigate threats"
+            data-desc="Engaging locals to map issues, surface patterns, and act faster."
+            data-link="#"
+          >
+            <img class="gallery-thumb" src="./assets/img/program-3.jpg" alt="Citizen science app" />
+            <h4>Citizen science app helps mitigate threats</h4>
+          </article>
+
+          <article
+            class="gallery-item"
+            data-bg="./assets/img/cta.jpg"
+            data-title="Surfers helped clean up oil spill with mapping app"
+            data-desc="Rapid situational awareness and coordination along the coast."
+            data-link="#"
+          >
+            <img class="gallery-thumb" src="./assets/img/cta.jpg" alt="Oil spill cleanup" />
+            <h4>Surfers helped clean up oil spill with mapping app</h4>
+          </article>
+
+          <article
+            class="gallery-item"
+            data-bg="./assets/img/about.jpg"
+            data-title="An elephant never forgets"
+            data-desc="Tracking movement to protect corridors and reduce conflict."
+            data-link="#"
+          >
+            <img class="gallery-thumb" src="./assets/img/about.jpg" alt="Elephant" />
+            <h4>An elephant never forgets</h4>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
   <section id="donate" class="cta section reveal cta--bg" style="--bg:url('./assets/img/cta.jpg')">
     <div class="cta__scrim"></div>
     <div class="container cta__inner">
@@ -169,7 +248,7 @@
     </div>
   </footer>
 
-  <script defer src="./assets/js/app.js?v=7"></script>
+  <script defer src="./assets/js/app.js?v=8"></script>
 </body>
 </html>
 
