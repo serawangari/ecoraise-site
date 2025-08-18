@@ -4,16 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Leafscapes</title>
-
-  <!-- Fonts (similar vibe to the template) -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="./assets/css/styles.css?v=6"/>
+  <link rel="stylesheet" href="./assets/css/styles.css?v=7"/>
 </head>
 <body>
 
-  <!-- HEADER / NAV -->
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="#">Leafscapes</a>
@@ -21,29 +17,28 @@
         <a href="#about">About</a>
         <a href="#programs">Programs</a>
         <a href="#impact">Impact</a>
+        <a href="#gallery">Gallery</a>
         <a href="#donate" class="btn btn-primary">Donate</a>
       </nav>
-      <button class="nav-toggle" aria-label="Open menu">
-        ☰
-      </button>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO (full-bleed image) -->
   <section class="hero">
     <img src="./assets/img/hero.jpg" alt="Leafscapes Hero Image" class="hero-img" />
     <div class="hero-overlay">
       <h1 class="hero-title reveal">Plant hope. Grow futures.</h1>
-      <p class="hero-subtitle reveal" style="--d:0.1s">
+      <p class="hero-subtitle reveal" style="--d:.1s">
         A greening initiative connecting corporate responsibility with community empowerment across Kenya.
       </p>
-      <div class="hero-cta reveal" style="--d:0.2s">
+      <div class="hero-cta reveal" style="--d:.2s">
         <a href="#donate" class="btn btn-primary">Donate Now</a>
         <a href="#programs" class="btn btn-ghost">Our Programs</a>
       </div>
 
       <!-- Floating signup card -->
-      <form class="hero-form reveal" style="--d:0.35s">
+      <form class="hero-form reveal" style="--d:.35s">
         <h2>Join Leafscapes</h2>
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Your Email" required />
@@ -52,41 +47,27 @@
     </div>
   </section>
 
-  <!-- LOGO STRIP / TRUST (optional) -->
-  <section class="strip reveal">
-    <div class="container strip__inner">
-      <span>Trusted by 50+ schools & partners</span>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section about reveal">
-    <div class="container">
-      <div class="section-head">
-        <h2>About Leafscapes</h2>
-        <p>
-          We channel corporate CSR into tangible environmental action by sponsoring tree-planting projects led by schools and local communities.
-        </p>
+  <!-- ABOUT (image + text like EcoRaise) -->
+  <section id="about" class="section reveal">
+    <div class="container about__wrap">
+      <div class="about__media">
+        <img src="./assets/img/about.jpg" alt="Seedlings & students" />
       </div>
-
-      <div class="grid-3">
-        <div class="card">
-          <h3>Corporate Partners</h3>
-          <p>Co-create measurable outcomes and reportable impact aligned to your CSR goals.</p>
+      <div class="about__text">
+        <div class="section-head" style="text-align:left">
+          <h2>About Leafscapes</h2>
+          <p>We channel corporate CSR into tangible environmental action by sponsoring tree-planting projects led by schools and local communities.</p>
         </div>
-        <div class="card">
-          <h3>Schools & Nurseries</h3>
-          <p>Supply healthy, locally adapted seedlings while educating the next generation.</p>
-        </div>
-        <div class="card">
-          <h3>Communities</h3>
-          <p>Plant, care for, and monitor trees for long-term environmental stewardship.</p>
-        </div>
+        <ul class="checklist">
+          <li>Corporate partners co-create measurable outcomes and reportable impact.</li>
+          <li>Schools & nurseries supply locally adapted seedlings and environmental education.</li>
+          <li>Communities plant, care for, and monitor trees for long-term stewardship.</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- PROGRAMS -->
+  <!-- PROGRAMS (image-backed cards like the template’s feature blocks) -->
   <section id="programs" class="section alt reveal">
     <div class="container">
       <div class="section-head">
@@ -95,21 +76,23 @@
       </div>
 
       <div class="grid-3">
-        <div class="program card">
-          <div class="program__icon">🌱</div>
+        <article class="card card--bg" style="--bg:url('./assets/img/program-1.jpg')">
+          <div class="card__scrim"></div>
           <h3>School Greening</h3>
-          <p>Tree nurseries, student clubs, and monitoring for survival rates.</p>
-        </div>
-        <div class="program card">
-          <div class="program__icon">🏞️</div>
+          <p>Tree nurseries, student clubs, and survival-rate monitoring.</p>
+        </article>
+
+        <article class="card card--bg" style="--bg:url('./assets/img/program-2.jpg')">
+          <div class="card__scrim"></div>
           <h3>Riparian Restoration</h3>
           <p>Native species on riverbanks to curb erosion and protect biodiversity.</p>
-        </div>
-        <div class="program card">
-          <div class="program__icon">🏙️</div>
+        </article>
+
+        <article class="card card--bg" style="--bg:url('./assets/img/program-3.jpg')">
+          <div class="card__scrim"></div>
           <h3>Urban Canopies</h3>
           <p>Heat-mitigation and air-quality projects in towns and cities.</p>
-        </div>
+        </article>
       </div>
     </div>
   </section>
@@ -137,15 +120,29 @@
         </div>
       </div>
 
-      <!-- simple progress -->
       <div class="progress reveal" style="--d:.1s">
         <div class="progress-bar" data-progress="72"><span>72%</span></div>
       </div>
     </div>
   </section>
 
-  <!-- DONATE CTA -->
-  <section id="donate" class="cta section reveal">
+  <!-- GALLERY (simple two-up like EcoRaise samples) -->
+  <section id="gallery" class="section reveal">
+    <div class="container">
+      <div class="section-head">
+        <h2>In the Field</h2>
+        <p>Snapshots from recent plantings and community sessions.</p>
+      </div>
+      <div class="gallery">
+        <img src="./assets/img/gallery-1.jpg" alt="Planting day" />
+        <img src="./assets/img/gallery-2.jpg" alt="Community nursery" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA (image background with dark scrim like the template) -->
+  <section id="donate" class="cta section reveal cta--bg" style="--bg:url('./assets/img/cta.jpg')">
+    <div class="cta__scrim"></div>
     <div class="container cta__inner">
       <div>
         <h2>Ready to plant the next 10,000?</h2>
@@ -172,8 +169,7 @@
     </div>
   </footer>
 
-  <!-- JS -->
-  <script defer src="./assets/js/app.js?v=6"></script>
+  <script defer src="./assets/js/app.js?v=7"></script>
 </body>
 </html>
 
