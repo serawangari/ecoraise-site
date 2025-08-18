@@ -347,18 +347,18 @@ body {
 @media (max-width:640px){
   .grid-4{ grid-template-columns:1fr; }
 }
-/* ===== Ambient site background (transparent look) ===== */
-html, body { position: relative; }
+/* Ambient site background */
 body::before{
   content:"";
   position: fixed;
   inset: 0;
-  background: url("./assets/img/bg-forest.jpg") center/cover no-repeat fixed;
-  opacity: .18;              /* strength of the background */
+  background: url("../img/bg-forest.jpg") center/cover no-repeat fixed;
+  opacity: .18;          /* tweak 0.10–0.30 to taste */
   filter: saturate(1.05);
-  pointer-events: none;      /* don't block clicks */
-  z-index: -1;               /* stay behind all content */
+  pointer-events: none;
+  z-index: -1;
 }
+
 /* Hero slideshow layers */
 .hero-media{ position:absolute; inset:0; overflow:hidden; }
 .hero-img{
@@ -369,3 +369,10 @@ body::before{
   will-change:opacity, transform;
 }
 .hero-img.show{ opacity:1; }        /* the visible one */
+/* Typeface setup (EcoRaise vibe) */
+body{ font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+h1,h2,h3,h4,.brand,.big-stat .num{
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  letter-spacing: -.02em;
+}
+
