@@ -4,77 +4,176 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Leafscapes</title>
-  <!-- correct CSS path -->
-  <link rel="stylesheet" href="./assets/css/styles.css?v=3"/>
+
+  <!-- Fonts (similar vibe to the template) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css?v=6"/>
 </head>
 <body>
 
-  <!-- HERO SECTION -->
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#">Leafscapes</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#impact">Impact</a>
+        <a href="#donate" class="btn btn-primary">Donate</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
   <section class="hero">
-    <!-- point to an image that exists in assets/img (rename one to hero.jpg if needed) -->
-    <img src="./assets/img/hero.jpg" alt="Leafscapes Hero Image" class="hero-img"/>
+    <img src="./assets/img/hero.jpg" alt="Leafscapes Hero Image" class="hero-img" />
     <div class="hero-overlay">
-      <h1 class="hero-title">Leafscapes</h1>
-      <p class="hero-subtitle">
-        A transformative greening initiative that bridges the gap between corporate responsibility and community empowerment.
+      <h1 class="hero-title reveal">Plant hope. Grow futures.</h1>
+      <p class="hero-subtitle reveal" style="--d:0.1s">
+        A greening initiative connecting corporate responsibility with community empowerment across Kenya.
       </p>
-      <form class="hero-form">
+      <div class="hero-cta reveal" style="--d:0.2s">
+        <a href="#donate" class="btn btn-primary">Donate Now</a>
+        <a href="#programs" class="btn btn-ghost">Our Programs</a>
+      </div>
+
+      <!-- Floating signup card -->
+      <form class="hero-form reveal" style="--d:0.35s">
         <h2>Join Leafscapes</h2>
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Your Email" required />
-        <button type="submit">Sign Up</button>
+        <button type="submit" class="btn btn-dark">Sign Up</button>
       </form>
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
-  <section class="about">
-    <div class="container">
-      <h2>About Leafscapes</h2>
-      <p>
-        Through our program, companies channel their Corporate Social Responsibility (CSR) commitments into tangible environmental action by sponsoring tree planting projects.
-      </p>
-      <p>
-        The heart of Leafscapes lies in schools and their nurseries — vibrant hubs where young minds grow alongside the seedlings they nurture. Corporates partner with these schools to source healthy, locally adapted tree seedlings, directly supporting education, environmental stewardship, and local livelihoods.
-      </p>
-      <p>From urban centers to rural landscapes, Leafscapes brings together:</p>
-      <ul>
-        <li>Corporate partners seeking impactful, measurable CSR outcomes.</li>
-        <li>Schools acting as both environmental educators and seedling suppliers.</li>
-        <li>Community members and volunteers who take part in planting, care, and long-term monitoring of the trees.</li>
-      </ul>
-      <p>
-        With Leafscapes, planting a tree becomes more than just an act of conservation — it becomes a story of collaboration, knowledge-sharing, and hope for greener, healthier futures across Kenya.
-      </p>
+  <!-- LOGO STRIP / TRUST (optional) -->
+  <section class="strip reveal">
+    <div class="container strip__inner">
+      <span>Trusted by 50+ schools & partners</span>
     </div>
   </section>
 
-  <!-- STATS SECTION -->
-  <section class="stats">
+  <!-- ABOUT -->
+  <section id="about" class="section about reveal">
     <div class="container">
-      <div class="stat">
-        <h3 class="stat-count" data-count="10000">0</h3>
-        <p>Trees Planted</p>
+      <div class="section-head">
+        <h2>About Leafscapes</h2>
+        <p>
+          We channel corporate CSR into tangible environmental action by sponsoring tree-planting projects led by schools and local communities.
+        </p>
       </div>
-      <div class="stat">
-        <h3 class="stat-count" data-count="50">0</h3>
-        <p>Schools Partnered</p>
-      </div>
-      <div class="stat">
-        <h3 class="stat-count" data-count="200">0</h3>
-        <p>Corporate Volunteers</p>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>Corporate Partners</h3>
+          <p>Co-create measurable outcomes and reportable impact aligned to your CSR goals.</p>
+        </div>
+        <div class="card">
+          <h3>Schools & Nurseries</h3>
+          <p>Supply healthy, locally adapted seedlings while educating the next generation.</p>
+        </div>
+        <div class="card">
+          <h3>Communities</h3>
+          <p>Plant, care for, and monitor trees for long-term environmental stewardship.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer class="about">
-    <div class="container" style="text-align:center;">
-      <small>© <span id="year"></span> Leafscapes</small>
+  <!-- PROGRAMS -->
+  <section id="programs" class="section alt reveal">
+    <div class="container">
+      <div class="section-head">
+        <h2>Programs</h2>
+        <p>From urban avenues to rural landscapes, we plant where it matters most.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="program card">
+          <div class="program__icon">🌱</div>
+          <h3>School Greening</h3>
+          <p>Tree nurseries, student clubs, and monitoring for survival rates.</p>
+        </div>
+        <div class="program card">
+          <div class="program__icon">🏞️</div>
+          <h3>Riparian Restoration</h3>
+          <p>Native species on riverbanks to curb erosion and protect biodiversity.</p>
+        </div>
+        <div class="program card">
+          <div class="program__icon">🏙️</div>
+          <h3>Urban Canopies</h3>
+          <p>Heat-mitigation and air-quality projects in towns and cities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT / STATS -->
+  <section id="impact" class="stats section reveal">
+    <div class="container">
+      <div class="section-head">
+        <h2>Our Impact</h2>
+        <p>What your support has grown so far.</p>
+      </div>
+
+      <div class="stats-wrap">
+        <div class="stat">
+          <h3 class="stat-count" data-count="10000">0</h3>
+          <p>Trees Planted</p>
+        </div>
+        <div class="stat">
+          <h3 class="stat-count" data-count="50">0</h3>
+          <p>Schools Partnered</p>
+        </div>
+        <div class="stat">
+          <h3 class="stat-count" data-count="200">0</h3>
+          <p>Corporate Volunteers</p>
+        </div>
+      </div>
+
+      <!-- simple progress -->
+      <div class="progress reveal" style="--d:.1s">
+        <div class="progress-bar" data-progress="72"><span>72%</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONATE CTA -->
+  <section id="donate" class="cta section reveal">
+    <div class="container cta__inner">
+      <div>
+        <h2>Ready to plant the next 10,000?</h2>
+        <p>Your gift puts seedlings in the soil and learners in the field.</p>
+      </div>
+      <div class="cta__actions">
+        <button class="amount" data-value="10">$10</button>
+        <button class="amount" data-value="25">$25</button>
+        <button class="amount" data-value="50">$50</button>
+        <input id="custom-amount" type="number" min="1" placeholder="Custom" />
+        <a href="#" class="btn btn-primary">Give Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>© <span id="year"></span> Leafscapes</div>
+      <div class="footer__links">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#impact">Impact</a>
+      </div>
     </div>
   </footer>
 
-  <!-- correct JS path -->
-  <script defer src="./assets/js/app.js"></script>
+  <!-- JS -->
+  <script defer src="./assets/js/app.js?v=6"></script>
 </body>
 </html>
 
