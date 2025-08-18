@@ -375,4 +375,25 @@ h1,h2,h3,h4,.brand,.big-stat .num{
   font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
   letter-spacing: -.02em;
 }
+/* ArcGIS Experience responsive embed */
+.exp-embed{
+  margin-top: 22px;
+  background: #ffffffcc;
+  border: 1px solid #e5e9ee;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.exp-embed iframe{
+  display:block;
+  width:100%;
+  height: min(90vh, 900px);  /* tall, but capped */
+  border:0;
+}
+.exp-fallback{
+  margin:0; padding:10px 12px; background:#fff;
+  border-top:1px solid #e5e9ee; text-align:right;
+}
+.exp-fallback a{ font-weight:600; text-decoration:none; color:var(--brand); }
+.exp-fallback a:hover{ text-decoration:underline; }
 
