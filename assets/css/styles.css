@@ -396,4 +396,43 @@ h1,h2,h3,h4,.brand,.big-stat .num{
 }
 .exp-fallback a{ font-weight:600; text-decoration:none; color:var(--brand); }
 .exp-fallback a:hover{ text-decoration:underline; }
+/* Dark, glassy header */
+.site-header{
+  backdrop-filter: saturate(140%) blur(10px);
+  background: rgba(13,17,23,.68);          /* black glass */
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.brand{ color:#e8eef7; }                   /* light title */
+.nav-links a{ color:#e8eef7; }
+.nav-links a:hover{ color:#ffffff; }
+
+/* Ghost button on dark surfaces */
+.btn-ghost{
+  border:1px solid rgba(255,255,255,.45);
+  color:#f8fafc;
+  background: transparent;
+}
+.btn-ghost:hover{ border-color:#fff; }
+
+/* ArcGIS embed panel: dark glass look */
+.exp-embed{
+  margin-top:22px;
+  background: rgba(10,14,20,.55);          /* black glass */
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:12px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(6px);
+  overflow:hidden;
+}
+.exp-embed iframe{
+  display:block; width:100%; height:min(90vh, 900px); border:0;
+}
+.exp-fallback{
+  margin:0; padding:10px 12px;
+  background:transparent;
+  border-top:1px solid rgba(255,255,255,.12);
+  text-align:right; color:#e5edf7;
+}
+.exp-fallback a{ font-weight:600; text-decoration:none; color:#a7f3d0; }
+.exp-fallback a:hover{ text-decoration:underline; }
 
