@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Leafscapes</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/styles.css?v=8"/>
+  <link rel="stylesheet" href="./assets/css/styles.css?v=9"/>
 </head>
 <body>
 
@@ -15,11 +15,10 @@
       <a class="brand" href="#">Leafscapes</a>
       <nav class="nav-links">
         <a href="#about">About</a>
-        <a href="#programs">Programs</a>
-        <a href="#segments">Segments</a>
         <a href="#impact">Impact</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#donate" class="btn btn-primary">Donate</a>
+        <a href="#projects">Projects</a>
+        <a href="#schools">Schools</a>
+        <a href="#join" class="btn btn-primary">Join</a>
       </nav>
       <button class="nav-toggle" aria-label="Open menu">☰</button>
     </div>
@@ -29,20 +28,14 @@
   <section class="hero">
     <img src="./assets/img/hero.jpg" alt="Leafscapes Hero Image" class="hero-img" />
     <div class="hero-overlay">
-      <h1 class="hero-title reveal">Plant hope. Grow futures.</h1>
+      <h1 class="hero-title reveal">Growing Communities, Strengthening Futures</h1>
       <p class="hero-subtitle reveal" style="--d:.1s">
-        A greening initiative connecting corporate responsibility with community empowerment across Kenya.
+        Join Leafscapes in empowering schools, restoring ecosystems, and driving corporate social responsibility through impactful tree planting initiatives.
       </p>
       <div class="hero-cta reveal" style="--d:.2s">
-        <a href="#donate" class="btn btn-primary">Donate Now</a>
-        <a href="#programs" class="btn btn-ghost">Our Programs</a>
+        <a href="#join" class="btn btn-primary">Start Your CSR Journey</a>
+        <a href="#projects" class="btn btn-ghost">Explore Projects</a>
       </div>
-      <form class="hero-form reveal" style="--d:.35s">
-        <h2>Join Leafscapes</h2>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <button type="submit" class="btn btn-dark">Sign Up</button>
-      </form>
     </div>
   </section>
 
@@ -55,184 +48,189 @@
       <div class="about__text">
         <div class="section-head" style="text-align:left">
           <h2>About Leafscapes</h2>
-          <p>We channel corporate CSR into tangible environmental action by sponsoring tree-planting projects led by schools and local communities.</p>
+          <p>
+            Leafscapes is a community-driven platform that connects corporates, schools, and local communities to restore landscapes through tree planting and monitoring.
+            We partner with schools that host tree nurseries, enabling corporates to source seedlings, track their survival through ArcGIS-powered dashboards, and report real impact to stakeholders.
+          </p>
+          <p>
+            By blending technology, education, and environmental stewardship, Leafscapes ensures CSR initiatives go beyond planting — they nurture communities, ecosystems, and the future.
+          </p>
         </div>
-        <ul class="checklist">
-          <li>Corporate partners co-create measurable outcomes and reportable impact.</li>
-          <li>Schools & nurseries supply locally adapted seedlings and environmental education.</li>
-          <li>Communities plant, care for, and monitor trees for long-term stewardship.</li>
-        </ul>
       </div>
     </div>
   </section>
 
-  <!-- PROGRAMS -->
-  <section id="programs" class="section alt reveal">
+  <!-- OUR IMPACT IN ACTION (feature points) -->
+  <section class="section alt reveal">
     <div class="container">
       <div class="section-head">
-        <h2>Programs</h2>
-        <p>From urban avenues to rural landscapes, we plant where it matters most.</p>
+        <h2>Our Impact in Action</h2>
+        <p>How projects are designed, monitored, and sustained across Kenya.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="feature-card">
+          <div class="feature-icon">📍</div>
+          <h3>21 Projects Active</h3>
+          <p>Across agroforestry, riparian restoration, and urban greening.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🏫</div>
+          <h3>School Partnerships</h3>
+          <p>Tree nurseries at schools empower students and provide corporates with a trusted source of seedlings.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Monitoring Made Simple</h3>
+          <p>Real-time survival rates, growth tracking, and geospatial dashboards powered by Survey123 and ArcGIS.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h3>Community Engagement</h3>
+          <p>Projects build awareness, create green jobs, and strengthen ties between corporates and communities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIG NUMBERS (updated labels & lower figures) -->
+  <section id="impact" class="impact section reveal">
+    <div class="container">
+      <div class="impact-grid">
+        <div class="big-stat">
+          <div class="num stat-count-adv" data-end="12" data-prefix="KSh " data-suffix="M">0</div>
+          <p class="label">Amount Disbursed</p>
+        </div>
+        <div class="big-stat">
+          <div class="num stat-count-adv" data-end="21">0</div>
+          <p class="label">Projects Funded</p>
+        </div>
+        <div class="big-stat">
+          <div class="num stat-count-adv" data-end="18">0</div>
+          <p class="label">Corporates Involved</p>
+        </div>
+        <div class="big-stat">
+          <div class="num stat-count-adv" data-end="2300" data-suffix="+">0</div>
+          <p class="label">Students Involved</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW CORPORATES BENEFIT -->
+  <section class="section reveal">
+    <div class="container">
+      <div class="section-head">
+        <h2>How Corporates Benefit</h2>
+      </div>
+
+      <div class="grid-4">
+        <div class="feature-card">
+          <div class="feature-icon">✅</div>
+          <h3>Verified Impact</h3>
+          <p>Every tree planted is geo-tagged and monitored.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3>Community Connection</h3>
+          <p>Link your CSR work directly to schools and local communities.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📥</div>
+          <h3>Reporting Ready</h3>
+          <p>Download impact reports for ESG, CSR, and sustainability disclosures.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h3>Transparency</h3>
+          <p>Track where your trees are, how they’re doing, and the lives they’re transforming.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT SHOWCASE -->
+  <section id="projects" class="section alt reveal">
+    <div class="container">
+      <div class="section-head">
+        <h2>Project Showcase</h2>
       </div>
 
       <div class="grid-3">
         <article class="card card--bg" style="--bg:url('./assets/img/program-1.jpg')">
           <div class="card__scrim"></div>
-          <h3>School Greening</h3>
-          <p>Tree nurseries, student clubs, and survival-rate monitoring.</p>
+          <h3>Agroforestry in Kakamega</h3>
+          <p>Empowering farmers with tree-based systems that improve soil health and provide sustainable livelihoods.</p>
+          <a class="cta-link" href="#" target="_blank" rel="noopener">See project map →</a>
         </article>
 
         <article class="card card--bg" style="--bg:url('./assets/img/program-2.jpg')">
           <div class="card__scrim"></div>
-          <h3>Riparian Restoration</h3>
-          <p>Native species on riverbanks to curb erosion and protect biodiversity.</p>
+          <h3>Riparian Zone Restoration in Garissa</h3>
+          <p>Restoring critical river ecosystems to secure water resources and biodiversity.</p>
+          <a class="cta-link" href="#" target="_blank" rel="noopener">See project map →</a>
         </article>
 
         <article class="card card--bg" style="--bg:url('./assets/img/program-3.jpg')">
           <div class="card__scrim"></div>
-          <h3>Urban Canopies</h3>
-          <p>Heat-mitigation and air-quality projects in towns and cities.</p>
+          <h3>Urban Greening in Nairobi County</h3>
+          <p>Greening cityscapes for climate resilience, cleaner air, and healthier urban living.</p>
+          <a class="cta-link" href="#" target="_blank" rel="noopener">See project map →</a>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- SEGMENTS (new) -->
-  <section id="segments" class="section segments reveal">
-    <div class="container segments__wrap">
-      <!-- Left intro -->
-      <div class="segments__intro">
-        <h2>Take Charge of your Projects</h2>
-        <p>
-          Use maps and analysis of spatial data to visualize, understand, plan, and act when coordinating forestry management programs.
-          Optimize workflows and mitigate risk while improving sustainable forestry and preserving wildlife, habitat, and ecosystems.
-        </p>
-      </div>
-
-      <!-- Right cards -->
-      <div class="segments__cards">
-        <article class="segments__card reveal" style="--d:.05s">
-          <h3>Visualize data</h3>
-          <p>Give data life through a series of maps, apps, and analytics that support your organization's digital transformation journey.</p>
-        </article>
-        <article class="segments__card reveal" style="--d:.1s">
-          <h3>Understand &amp; share</h3>
-          <p>Provide easy access to relevant information in appropriate apps to uncover spatial patterns and analyze options for improvement.</p>
-        </article>
-        <article class="segments__card reveal" style="--d:.15s">
-          <h3>Plan ahead</h3>
-          <p>Energize the planning process with improved operational workflows while mitigating risk for enhanced business performance.</p>
-        </article>
-        <article class="segments__card reveal" style="--d:.2s">
-          <h3>Act with confidence</h3>
-          <p>Be confident in the agile decisions that you make and thrive as an organization with location at the center of operations.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- IMPACT (large figures) -->
-  <section id="impact" class="impact section reveal">
+  <!-- SCHOOLS AT THE HEART OF CHANGE -->
+  <section id="schools" class="section reveal">
     <div class="container">
-      <div class="impact-grid">
-        <div class="big-stat">
-          <div class="num stat-count-adv" data-end="256" data-prefix="$" data-suffix="M">0</div>
-          <p class="label">We’ve Helped Raise</p>
-        </div>
-        <div class="big-stat">
-          <div class="num stat-count-adv" data-end="37" data-suffix="K+">0</div>
-          <p class="label">Projects Funded</p>
-        </div>
-        <div class="big-stat">
-          <div class="num stat-count-adv" data-end="40" data-suffix="+">0</div>
-          <p class="label">Countries Worldwide</p>
-        </div>
-        <div class="big-stat">
-          <div class="num stat-count-adv" data-end="89" data-suffix="K">0</div>
-          <p class="label">Volunteers Connected</p>
-        </div>
+      <div class="section-head">
+        <h2>Schools at the Heart of Change</h2>
+        <p>Leafscapes partners with schools to nurture the next generation of environmental stewards.</p>
+      </div>
+
+      <div class="grid-4">
+        <article class="school-card">
+          <img src="./assets/img/gallery-1.jpg" alt="Green Valley Secondary" />
+          <h4>Green Valley Secondary</h4>
+          <p>Student-led nursery supplying seedlings for local projects.</p>
+        </article>
+        <article class="school-card">
+          <img src="./assets/img/about.jpg" alt="Riverbend Primary" />
+          <h4>Riverbend Primary</h4>
+          <p>Hands-on environmental education and riparian restoration.</p>
+        </article>
+        <article class="school-card">
+          <img src="./assets/img/cta.jpg" alt="Sunrise Academy" />
+          <h4>Sunrise Academy</h4>
+          <p>Urban greening club improving air quality and shade.</p>
+        </article>
+        <article class="school-card">
+          <img src="./assets/img/program-3.jpg" alt="Highland School" />
+          <h4>Highland School</h4>
+          <p>Monitoring tree survival using Survey123 and ArcGIS.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- GALLERY (featured hero + tile rail) -->
-  <section id="gallery" class="gallery-section reveal">
-    <div class="gallery-hero" style="--bg:url('./assets/img/gallery-1.jpg')">
-      <div class="gallery-hero__scrim"></div>
-      <div class="container gallery-hero__content">
-        <p class="eyebrow">INDUSTRY BLOG</p>
-        <h2 class="gallery-title">People and wildlife in Africa</h2>
-        <p class="gallery-desc">
-          Community conservation planning that balances tradition and technology.
-        </p>
-        <a class="btn btn-primary gallery-btn" href="#" target="_blank" rel="noopener">Read the story</a>
-      </div>
-    </div>
-
-    <div class="gallery-panel">
-      <div class="container">
-        <div class="gallery-rail">
-          <article
-            class="gallery-item active"
-            data-bg="./assets/img/gallery-1.jpg"
-            data-title="People and wildlife in Africa"
-            data-desc="Community conservation planning that balances tradition and technology."
-            data-link="#"
-          >
-            <img class="gallery-thumb" src="./assets/img/gallery-1.jpg" alt="People and wildlife in Africa" />
-            <h4>People and wildlife in Africa</h4>
-          </article>
-
-          <article
-            class="gallery-item"
-            data-bg="./assets/img/program-3.jpg"
-            data-title="Citizen science app helps mitigate threats"
-            data-desc="Engaging locals to map issues, surface patterns, and act faster."
-            data-link="#"
-          >
-            <img class="gallery-thumb" src="./assets/img/program-3.jpg" alt="Citizen science app" />
-            <h4>Citizen science app helps mitigate threats</h4>
-          </article>
-
-          <article
-            class="gallery-item"
-            data-bg="./assets/img/cta.jpg"
-            data-title="Surfers helped clean up oil spill with mapping app"
-            data-desc="Rapid situational awareness and coordination along the coast."
-            data-link="#"
-          >
-            <img class="gallery-thumb" src="./assets/img/cta.jpg" alt="Oil spill cleanup" />
-            <h4>Surfers helped clean up oil spill with mapping app</h4>
-          </article>
-
-          <article
-            class="gallery-item"
-            data-bg="./assets/img/about.jpg"
-            data-title="An elephant never forgets"
-            data-desc="Tracking movement to protect corridors and reduce conflict."
-            data-link="#"
-          >
-            <img class="gallery-thumb" src="./assets/img/about.jpg" alt="Elephant" />
-            <h4>An elephant never forgets</h4>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section id="donate" class="cta section reveal cta--bg" style="--bg:url('./assets/img/cta.jpg')">
+  <!-- JOIN THE MOVEMENT -->
+  <section id="join" class="cta section reveal cta--bg" style="--bg:url('./assets/img/cta.jpg')">
     <div class="cta__scrim"></div>
     <div class="container cta__inner">
       <div>
-        <h2>Ready to plant the next 10,000?</h2>
-        <p>Your gift puts seedlings in the soil and learners in the field.</p>
+        <h2>Your CSR Can Transform Communities</h2>
+        <p>
+          Every tree planted through Leafscapes tells a story — of a corporate taking responsibility, a child learning the value of stewardship, and a community building resilience.
+          Be part of this transformation. Let’s grow landscapes, opportunities, and futures together.
+        </p>
       </div>
       <div class="cta__actions">
-        <button class="amount" data-value="10">$10</button>
-        <button class="amount" data-value="25">$25</button>
-        <button class="amount" data-value="50">$50</button>
-        <input id="custom-amount" type="number" min="1" placeholder="Custom" />
-        <a href="#" class="btn btn-primary">Give Now</a>
+        <a href="#" class="btn btn-primary">Sign Up as a Corporate Partner</a>
+        <a href="#about" class="btn btn-ghost">Contact Us Today</a>
       </div>
     </div>
   </section>
@@ -242,15 +240,16 @@
       <div>© <span id="year"></span> Leafscapes</div>
       <div class="footer__links">
         <a href="#about">About</a>
-        <a href="#programs">Programs</a>
         <a href="#impact">Impact</a>
+        <a href="#projects">Projects</a>
       </div>
     </div>
   </footer>
 
-  <script defer src="./assets/js/app.js?v=8"></script>
+  <script defer src="./assets/js/app.js?v=9"></script>
 </body>
 </html>
+
 
 
 
