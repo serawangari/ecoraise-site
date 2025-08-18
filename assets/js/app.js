@@ -156,5 +156,22 @@ if (galleryHero && galleryTitle && galleryDesc && galleryBtn){
     });
   });
 }
+// ===== Spotlight rail swaps the hero (ESRI style) =====
+const spHero = document.querySelector('.spotlight-hero');
+const spTitle = document.querySelector('.spotlight-title');
+const spDesc  = document.querySelector('.spotlight-desc');
+
+if (spHero && spTitle && spDesc){
+  document.querySelectorAll('.spotlight-item').forEach(item=>{
+    item.addEventListener('click', ()=>{
+      document.querySelectorAll('.spotlight-item').forEach(i=>i.classList.remove('active'));
+      item.classList.add('active');
+      const bg = item.dataset.bg, t = item.dataset.title, d = item.dataset.desc;
+      spHero.style.setProperty('--bg', `url('${bg}')`);
+      spTitle.textContent = t;
+      spDesc.textContent  = d;
+    });
+  });
+}
 
 
