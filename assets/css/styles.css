@@ -347,3 +347,15 @@ body {
 @media (max-width:640px){
   .grid-4{ grid-template-columns:1fr; }
 }
+/* ===== Ambient site background (transparent look) ===== */
+html, body { position: relative; }
+body::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  background: url("./assets/img/bg-forest.jpg") center/cover no-repeat fixed;
+  opacity: .18;              /* strength of the background */
+  filter: saturate(1.05);
+  pointer-events: none;      /* don't block clicks */
+  z-index: -1;               /* stay behind all content */
+}
