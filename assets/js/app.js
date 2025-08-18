@@ -19,12 +19,47 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-// ===== Parallax hero image =====
-const heroImg = document.querySelector('.hero-img');
-if (heroImg){
+/* === HERO SLIDESHOW (crossfade) === */
+const slides = [
+  './assets/img/hero.jpg',
+  './assets/img/hero-2.jpg',
+  './assets/img/hero-3.gif'
+];
+
+// Preload images
+slides.forEach(src => { const i = new Image(); i.src = src; });
+
+const imgA = document.querySelector('.hero-img-1');
+const imgB = document.querySelector('.hero-img-2');
+let current = 0;
+let showA = true;
+
+function swapHero(){
+  const next = (current + 1) % slides.length;
+  const top   = showA ? imgA : imgB;   // currently visible
+  const under = showA ? imgB : imgA;   // will fade in
+
+  // prepare next image and fade it in
+  under.src = slides[next];
+  under.classList.add('show');
+  top.classList.remove('show');
+
+  // swap pointers
+  showA = !showA;
+  current = next;
+}
+
+// Change every 7s
+if (imgA && imgB) setInterval(swapHero, 7000);
+
+/* === Parallax: move both hero layers === */
+const heroLayers = document.querySelectorAll('.hero-media img');
+if (heroLayers.length){
   window.addEventListener('scroll', () => {
     const y = window.scrollY * 0.25;
-    heroImg.style.transform = `translateY(${y}px) scale(1.05)`;
+    heroLayers.forEach(el => {
+      el.style.transform = `translateY(${y}px) scale(1.05)`;
+    });
   });
 }
 
