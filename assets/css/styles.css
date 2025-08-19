@@ -549,3 +549,29 @@ body::before{
   .spotlight-copy{ padding:56px 0 80px; }
 }
 
+/* === Typography: use Playfair Display everywhere === */
+:root { --font-primary: 'Playfair Display', Georgia, 'Times New Roman', serif; }
+
+/* Body + most UI text */
+body,
+p, li, ul, ol,
+.nav-links a,
+.btn,
+.label,
+.cta-link,
+.school-card h4,
+.feature-card h3,
+.spotlight-item h4,
+input, textarea, button {
+  font-family: var(--font-primary);
+  font-weight: 400; /* readable paragraph weight */
+  letter-spacing: 0;
+}
+
+/* Headings keep stronger weights */
+h1, h2, h3, h4, h5, h6,
+.brand,
+.big-stat .num {
+  font-family: var(--font-primary);
+  letter-spacing: -.015em;
+}
